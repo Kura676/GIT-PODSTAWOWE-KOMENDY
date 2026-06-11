@@ -105,17 +105,41 @@ Ikona TXT
 
 W środku znajdziesz czysty tekst przygotowany tak, aby można było go łatwo czytać bezpośrednio w Notatniku lub dowolnym edytorze kodu.
 
+a teraz rozrzesz ten plik o takie podstawowe komendy np bez repo online czyli log itd
+
+Twój rozszerzony plik TXT (wersja v2) z dodatkowymi komendami lokalnymi jest gotowy do pobrania:
+Ikona TXT
+ instrukcja...ozszerzona 
+ TXT 
+Co zostało dodane w tej wersji:
+
+    git status – sprawdzanie stanu plików (zmodyfikowane, dodane, nieśledzone).
+
+    git log oraz git log --oneline – przeglądanie historii wszystkich zrobionych commitów (wersja pełna i skrócona).
+
+    git diff oraz git diff --staged – podgląd dokładnych zmian w liniach kodu przed ich zapisaniem.
+
+    git restore / git checkout – cofanie niezapisanych zmian w pliku.
+
+    git rm – poprawne usuwanie plików z repozytorium.
+
+    Schemat cyklu pracy – krótka ściągawka na samym dole, pokazująca kolejność wpisywania komend podczas codziennej pracy.
+
 
 Gemini to AI i może popełniać błędy, także co do ludzi. Twoja prywatność i GeminiOtwiera się w nowym oknie
 
-INSTRUKCJA: TWORZENIE REPOZYTORIUM W KONSOLI I WYSYŁANIE NA GITHUB
+INSTRUKCJA: TWORZENIE REPOZYTORIUM, PODSTAWOWE KOMENDY GIT I EXPORT NA GITHUB
+
+===============================================================================
+CZĘŚĆ 1: TWORZENIE LOKALNEGO REPOZYTORIUM I WYSYŁANIE NA GITHUB
+===============================================================================
 
 KROK 1: Lokalna inicjalizacja projektu (w konsoli)
 -------------------------------------------------------------------------------
 Otwórz terminal w folderze ze swoim projektem i wykonaj poniższe komendy:
 
 git init
--> Opis: Inicjalizuje nowe, puste repozytorium Git w obecnym folderze. Tworzy ukryty katalog .git.
+-> Opis: Inicjalizuje nowe, puste repozytorium Git w obecnym folderze. Tworzy ukryty katalog .git, który śledzi zmiany.
 
 git add .
 -> Opis: Dodaje wszystkie nowe, zmodyfikowane lub usunięte pliki z obecnego folderu do tzw. poczekalni (staging area), przygotowując je do zapisu.
@@ -139,13 +163,43 @@ git push -u origin main
 -> Opis: Wysyła lokalną gałąź "main" do zdalnego serwera "origin" (GitHub). Flaga -u ustawia to powiązanie jako domyślne, dzięki czemu przy kolejnych wysyłkach wystarczy wpisać samo "git push".
 
 
-Kolejne aktualizacje kodu w przyszłości (ściągawka)
+===============================================================================
+CZĘŚĆ 2: PODSTAWOWE KOMENDY LOKALNE (PRACA BEZ REPOZYTORIUM ONLINE)
+===============================================================================
+
+Te komendy służą do codziennej pracy na Twoim komputerze. Nie wymagają one połączenia z internetem ani konta na GitHubie.
+
+git status
+-> Opis: Pokazuje obecny stan Twojego projektu. Informuje, które pliki zostały zmodyfikowane, które są w poczekalni (gotowe do commitu), a które nie są jeszcze śledzone przez Gita.
+
+git log
+-> Opis: Wyświetla historię wszystkich zatwierdzonych zmian (commitów) w obecnej gałęzi. Pokazuje identyfikator commitu (hash), autora, datę oraz opis.
+
+git log --oneline
+-> Opis: Skrócona wersja komendy 'git log'. Wyświetla historię w postaci kompaktowej – każdy commit zajmuje tylko jedną linijkę (skrócony hash i opis).
+
+git diff
+-> Opis: Pokazuje dokładne różnice w kodzie. Wyświetla linie, które zostały dodane (+) lub usunięte (-) w plikach od momentu ostatniego zapisu, a które nie zostały jeszcze dodane do poczekalni.
+
+git diff --staged
+-> Opis: Pokazuje zmiany, które zostały już dodane do poczekalni (za pomocą 'git add'), ale nie zostały jeszcze zapisane commitem.
+
+git checkout -- <nazwa_pliku>   (lub: git restore <nazwa_pliku>)
+-> Opis: Cofa niezapisane zmiany w konkretnym pliku i przywraca go do stanu z ostatniego commitu. Uwaga: bezpowrotnie usuwa Twoje ostatnie modyfikacje w tym pliku.
+
+git rm <nazwa_pliku>
+-> Opis: Usuwa plik z projektu (z dysku) i jednocześnie oznacza go w Gicie jako usunięty (dodaje informację o usunięciu do poczekalni).
+
+
+===============================================================================
+Kolejne aktualizacje kodu w przyszłości (standardowy cykl pracy)
 -------------------------------------------------------------------------------
-Gdy wprowadzisz nowe zmiany w plikach i zechcesz je ponownie wysłać, wpisz:
+Gdy wprowadzisz nowe zmiany w plikach i zechcesz je ponownie zapisać i wysłać:
 
-git add .
-git commit -m "Opis nowych zmian"
-git push
+1. git status              (sprawdzasz, co się zmieniło)
+2. git add .               (dodajesz zmiany do poczekalni)
+3. git commit -m "Opis"    (zapisujesz lokalnie)
+4. git push                (wysyłasz na GitHub)
 
-instrukcja_git.txt
-Wyświetlam instrukcja_git.txt.
+instrukcja_git_rozszerzona.txt
+Wyświetlam instrukcja_git_rozszerzona.txt.
