@@ -1,0 +1,151 @@
+ Gemini
+Nowy czat
+Szukaj na czatach
+Biblioteka
+Gemy
+Nowy notatnik
+MATMA
+Sprawdź poprawność angielskiego tekstu
+Kiedy wszyscy mówią o giełdzie
+Nauka o cyklu koniunkturalnym i gospodarce
+Tworzenie i wysyłanie repozytorium GitHub
+Naprawa błędu React i Express
+Fixing CORS Errors in Web Development
+Uruchamianie serwera Express.js
+Prywatność konta YouTube i subskrybentów
+Inteligentni Hakerzy i Charyzmatyczni Inwestorzy
+React vs Angular: Który łatwiejszy?
+React Inline Style Correction
+Przekreślanie tekstu w React
+Express.js: Podstawy, Składnia, Middleware
+Szablon Express.js do prostego backendu
+React: Odwołanie do zdjęć w `public`
+Instalacja Express Bez Internetu
+Poprawka błędu w Express.js
+Instalacja i użycie PyQt w IDE
+Jak przyjąć wysoką piłkę stopą
+Matematyka i programowanie: wspólne cechy i strategie
+Jak przestać biegać na piętach
+Gokartowe techniki hamowania przed zakrętem
+Alternatywy dla "Dobranoc"
+Analiza notatek do egzaminu zawodowego
+Wybór projektu testów jednostkowych w .NET
+Cofanie zmian z `git reset --soft`
+Algorytmy: Wyszukiwanie i Sortowanie
+Rodzaje Licencji Oprogramowania i ich Podział
+Pisanie testów jednostkowych w C#
+Testowanie i dokumentacja egzaminu zawodowego
+Podstawowe protokoły sieciowe: HTTP, TCP, IP
+Zasady SOLID w programowaniu obiektowym
+Ataki Hakerskie i Złośliwe Oprogramowanie
+Notatka o licencjach Open Source
+Narzędzia programistyczne: Kompilator, Interpreter, Debugger
+Usuwanie obiektów z tablicy w React
+Poznań, Polska Na podstawie adresu IP Zaktualizuj lokalizację
+Rozmowa z Gemini
+
+czy moge stworzyc repo w konsoli i pozniej je wysalc na githuba?
+
+Tak, absolutnie! To jeden z najczęstszych sposobów pracy z Git-em. Tworzysz lokalne repozytorium na swoim komputerze, a potem „wypychasz” je do chmury na GitHubie.
+
+Oto krótka i prosta instrukcja, jak to zrobić krok po kroku.
+Krok 1: Stwórz repozytorium na swoim komputerze (w konsoli)
+
+Otwórz terminal w folderze ze swoim projektem i wpisz następujące komendy:
+Bash
+
+# 1. Inicjalizacja pustego repozytorium Git
+git init
+
+# 2. Dodaj pliki do poczekalni (staging area) - kropka oznacza "wszystkie pliki"
+git add .
+
+# 3. Zrób pierwszy zapis (commit) zmian
+git commit -m "Pierwszy commit"
+
+# 4. Zmień nazwę głównej gałęzi na 'main' (standard na GitHubie)
+git branch -M main
+
+Krok 2: Stwórz puste repozytorium na GitHubie
+
+    Wejdź na GitHub i kliknij plusik (+) w prawym górnym rogu, a następnie wybierz New repository.
+
+    Wpisz nazwę repozytorium (najlepiej taką samą jak nazwa Twojego folderu).
+
+    Ważne: Nie zaznaczaj opcji Add a README file, Add .gitignore ani Choose a license. Repozytorium musi być całkowicie puste, żeby nie było konfliktów.
+
+    Kliknij Create repository.
+
+Krok 3: Połącz konsolę z GitHubem i wyślij pliki
+
+Po stworzeniu repozytorium GitHub pokaże Ci gotowe komendy do skopiowania. Szukaj sekcji zatytułowanej „...or push an existing repository from the command line”.
+
+Wklej te komendy w swojej konsoli:
+Bash
+
+# 1. Powiąż lokalne repozytorium z adresem na GitHubie (zastąp link swoim)
+git remote add origin https://github.com/TWOJA-NAZWA-UZYTKOWNIKA/NAZWA-REPOZYTORIUM.git
+
+# 2. Wyślij (push) kod do GitHuba
+git push -u origin main
+
+Gotowe! Od teraz, kiedy wprowadzisz nowe zmiany w kodzie, wystarczy, że wpiszesz standardowe:
+Bash
+
+git add .
+git commit -m "Opis zmian"
+git push
+
+zrob mi to w jendym txt te komendy i i ich opisy
+
+Twój plik TXT z komendami i ich opisami jest gotowy do pobrania:
+Ikona TXT
+ instrukcja_git 
+ TXT 
+
+W środku znajdziesz czysty tekst przygotowany tak, aby można było go łatwo czytać bezpośrednio w Notatniku lub dowolnym edytorze kodu.
+
+
+Gemini to AI i może popełniać błędy, także co do ludzi. Twoja prywatność i GeminiOtwiera się w nowym oknie
+
+INSTRUKCJA: TWORZENIE REPOZYTORIUM W KONSOLI I WYSYŁANIE NA GITHUB
+
+KROK 1: Lokalna inicjalizacja projektu (w konsoli)
+-------------------------------------------------------------------------------
+Otwórz terminal w folderze ze swoim projektem i wykonaj poniższe komendy:
+
+git init
+-> Opis: Inicjalizuje nowe, puste repozytorium Git w obecnym folderze. Tworzy ukryty katalog .git.
+
+git add .
+-> Opis: Dodaje wszystkie nowe, zmodyfikowane lub usunięte pliki z obecnego folderu do tzw. poczekalni (staging area), przygotowując je do zapisu.
+
+git commit -m "Pierwszy commit"
+-> Opis: Tworzy trwałą migawkę (zapis) plików znajdujących się w poczekalni. Flaga -m pozwala dodać krótki opis zmian w cudzysłowie.
+
+git branch -M main
+-> Opis: Zmienia nazwę domyślnej głównej gałęzi (brancha) na "main". Jest to aktualny standard wymagany przez GitHub.
+
+
+KROK 2: Połączenie z GitHubem i wysłanie kodu
+-------------------------------------------------------------------------------
+Stwórz PUSTE repozytorium na GitHubie (bez pliku README, .gitignore ani licencji),
+skopiuj jego adres URL, a następnie wykonaj w konsoli:
+
+git remote add origin https://github.com/TWOJA-NAZWA-UZYTKOWNIKA/NAZWA-REPOZYTORIUM.git
+-> Opis: Dodaje zdalny serwer (w tym przypadku GitHub) i przypisuje mu skróconą nazwę "origin". Zastąp podany URL linkiem do swojego repozytorium.
+
+git push -u origin main
+-> Opis: Wysyła lokalną gałąź "main" do zdalnego serwera "origin" (GitHub). Flaga -u ustawia to powiązanie jako domyślne, dzięki czemu przy kolejnych wysyłkach wystarczy wpisać samo "git push".
+
+
+Kolejne aktualizacje kodu w przyszłości (ściągawka)
+-------------------------------------------------------------------------------
+Gdy wprowadzisz nowe zmiany w plikach i zechcesz je ponownie wysłać, wpisz:
+
+git add .
+git commit -m "Opis nowych zmian"
+git push
+
+instrukcja_git.txt
+Wyświetlam instrukcja_git.txt.
