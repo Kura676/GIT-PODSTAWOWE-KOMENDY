@@ -1,54 +1,5 @@
- Gemini
-Nowy czat
-Szukaj na czatach
-Biblioteka
-Gemy
-Nowy notatnik
-MATMA
-Sprawdź poprawność angielskiego tekstu
-Kiedy wszyscy mówią o giełdzie
-Nauka o cyklu koniunkturalnym i gospodarce
-Tworzenie i wysyłanie repozytorium GitHub
-Naprawa błędu React i Express
-Fixing CORS Errors in Web Development
-Uruchamianie serwera Express.js
-Prywatność konta YouTube i subskrybentów
-Inteligentni Hakerzy i Charyzmatyczni Inwestorzy
-React vs Angular: Który łatwiejszy?
-React Inline Style Correction
-Przekreślanie tekstu w React
-Express.js: Podstawy, Składnia, Middleware
-Szablon Express.js do prostego backendu
-React: Odwołanie do zdjęć w `public`
-Instalacja Express Bez Internetu
-Poprawka błędu w Express.js
-Instalacja i użycie PyQt w IDE
-Jak przyjąć wysoką piłkę stopą
-Matematyka i programowanie: wspólne cechy i strategie
-Jak przestać biegać na piętach
-Gokartowe techniki hamowania przed zakrętem
-Alternatywy dla "Dobranoc"
-Analiza notatek do egzaminu zawodowego
-Wybór projektu testów jednostkowych w .NET
-Cofanie zmian z `git reset --soft`
-Algorytmy: Wyszukiwanie i Sortowanie
-Rodzaje Licencji Oprogramowania i ich Podział
-Pisanie testów jednostkowych w C#
-Testowanie i dokumentacja egzaminu zawodowego
-Podstawowe protokoły sieciowe: HTTP, TCP, IP
-Zasady SOLID w programowaniu obiektowym
-Ataki Hakerskie i Złośliwe Oprogramowanie
-Notatka o licencjach Open Source
-Narzędzia programistyczne: Kompilator, Interpreter, Debugger
-Usuwanie obiektów z tablicy w React
-Poznań, Polska Na podstawie adresu IP Zaktualizuj lokalizację
-Rozmowa z Gemini
 
-czy moge stworzyc repo w konsoli i pozniej je wysalc na githuba?
 
-Tak, absolutnie! To jeden z najczęstszych sposobów pracy z Git-em. Tworzysz lokalne repozytorium na swoim komputerze, a potem „wypychasz” je do chmury na GitHubie.
-
-Oto krótka i prosta instrukcja, jak to zrobić krok po kroku.
 Krok 1: Stwórz repozytorium na swoim komputerze (w konsoli)
 
 Otwórz terminal w folderze ze swoim projektem i wpisz następujące komendy:
